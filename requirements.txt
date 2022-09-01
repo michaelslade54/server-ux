@@ -1,2 +1,2 @@
 # generated from manifests external_dependencies
-pyrfc6266
+odoo_test_helper
