@@ -97,7 +97,7 @@ class TierTierValidation(TransactionCase):
         self.assertTrue(review_1.status == "pending")
         self.assertTrue(review_2.status == "waiting")
         record = test_record.with_user(self.test_user_1.id)
-        record.invalidate_cache()
+        record.invalidate_model()
         record.validate_tier()
         self.assertTrue(review_1.status == "approved")
         self.assertTrue(review_2.status == "pending")
